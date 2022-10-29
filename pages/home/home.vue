@@ -1,15 +1,5 @@
 <template>
   <view>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
->>>>>>> c65e62cd795acc72c9eede0ba285a3bc2c49506b
     <!-- 轮播图区域 -->
     <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
       <swiper-item v-for="(item,index) in swiperList" :key="index">
@@ -47,24 +37,6 @@
       </view>
     </view>
   </view>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    home
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-=======
-=======
-    home
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
->>>>>>> d090979 (提交分类以及主页)
-=======
-=======
-    home
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
->>>>>>> c65e62cd795acc72c9eede0ba285a3bc2c49506b
   </view>
 </template>
 
@@ -72,14 +44,6 @@
   export default {
     data() {
       return {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
->>>>>>> c65e62cd795acc72c9eede0ba285a3bc2c49506b
         swiperList: [],
         navList: [],
         floorList: []
@@ -139,24 +103,7 @@
           })
         })
         this.floorList = message
-
       }
-=======
-        
-      };
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        swiperList: [],
-        navList: [],
-        floorList: []
-      };
-    },
-    onLoad() {
-      this.getSwiperList();
-      this.getNavList();
-      this.getFloorList()
     },
     methods: {
       async getSwiperList() {
@@ -209,26 +156,12 @@
         this.floorList = message
 
       }
->>>>>>> 56385ea (首页的简单交互完成)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
->>>>>>> c65e62cd795acc72c9eede0ba285a3bc2c49506b
+
     }
   }
 </script>
 
 <style lang="scss">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
->>>>>>> c65e62cd795acc72c9eede0ba285a3bc2c49506b
   //轮播图区域
   swiper {
     height: 330rpx;
@@ -283,22 +216,4 @@
       }
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-=======
-=======
-
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
->>>>>>> d090979 (提交分类以及主页)
-=======
-=======
-
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
->>>>>>> c65e62cd795acc72c9eede0ba285a3bc2c49506b
 </style>

@@ -28,16 +28,6 @@
     }
 
   }],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
->>>>>>> c65e62cd795acc72c9eede0ba285a3bc2c49506b
   "subPackages": [{
     "root": "subpkg",
     "pages": [{
@@ -47,32 +37,15 @@
         "enablePullDownRefresh": false
       }
 
-    }    ,{
-                    "path" : "goods_list/goods_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
+    }, {
+      "path": "goods_list/goods_list",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }]
   }],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-=======
-=======
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
->>>>>>> d090979 (提交分类以及主页)
-=======
-=======
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
->>>>>>> c65e62cd795acc72c9eede0ba285a3bc2c49506b
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
