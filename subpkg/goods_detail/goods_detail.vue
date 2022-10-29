@@ -1,19 +1,15 @@
 <template>
-  <view class="">111</view>
+  <view>
+    111
+  </view>
 </template>
 
 <script>
   export default {
     data() {
       return {
-     
+        
       };
-    },
-    methods: {
-     
-    },
-    onLoad() {
-   
     }
   }
 </script>

@@ -1,19 +1,18 @@
 <template>
-  <view class="">111</view>
+  <view>
+    
+  </view>
 </template>
 
 <script>
   export default {
     data() {
       return {
-     
+        
       };
     },
-    methods: {
-     
-    },
-    onLoad() {
-   
+    onLoad(options) {
+       console.log(options,'options')
     }
   }
 </script>
