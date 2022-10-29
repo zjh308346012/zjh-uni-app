@@ -26,131 +26,69 @@
       "navigationBarTitleText": "",
       "enablePullDownRefresh": false
     }
-
-<<<<<<< HEAD
   }],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-=======
->>>>>>> c65e62c (提交分类以及主页)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
-=======
->>>>>>> 56385ea (首页的简单交互完成)
->>>>>>> 064de9d (提交也没)
-=======
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-=======
->>>>>>> d090979 (提交分类以及主页)
->>>>>>> d6350b2 (提交也没)
-=======
-  }  
-    ],
->>>>>>> 90c1dcb (自定义搜索框第一版)
-  "subPackages": [{
-    "root": "subpkg",
-    "pages": [{
-      "path": "goods_detail/goods_detail",
-      "style": {
-        "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
-      }
-
-<<<<<<< HEAD
-    }    ,{
-                    "path" : "goods_list/goods_list",
-=======
-    }, {
-      "path": "goods_list/goods_list",
-      "style": {
-        "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
-      }
-
-    }    ,{
-                    "path" : "search/search",
->>>>>>> 90c1dcb (自定义搜索框第一版)
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-  }],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 064de9d (提交也没)
-=======
->>>>>>> d6350b2 (提交也没)
-=======
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
-=======
->>>>>>> 56385ea (首页的简单交互完成)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
->>>>>>> c65e62c (提交分类以及主页)
-=======
->>>>>>> d6350b2 (提交也没)
-=======
-=======
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
->>>>>>> d090979 (提交分类以及主页)
-<<<<<<< HEAD
-=======
->>>>>>> 064de9d (提交也没)
-=======
->>>>>>> d6350b2 (提交也没)
-  "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#efefef",
-    "backgroundColor": "#F8F8F8",
-    "app-plus": {
-      "background": "#efeff4"
+  
+"subPackages": [{
+  "root": "subpkg",
+  "pages": [{
+    "path": "goods_detail/goods_detail",
+    "style": {
+      "navigationBarTitleText": "",
+      "enablePullDownRefresh": false
     }
-  },
-  "tabBar": {
-    "list": [{
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath": "static/home (1).png",
-        "selectedIconPath": "static/home-fill (1).png"
-      },
-      {
-        "pagePath": "pages/catr/catr",
-        "text": "分类",
-        "iconPath": "static/all.png",
-        "selectedIconPath": "static/all-fill.png"
-      },
-      {
-        "pagePath": "pages/cart/cart",
-        "text": "购物车",
-        "iconPath": "static/cart-Empty.png",
-        "selectedIconPath": "static/cart-Empty-fill.png"
-      },
-      {
-        "pagePath": "pages/my/my",
-        "text": "联系我们",
-        "iconPath": "static/account.png",
-        "selectedIconPath": "static/account-fill.png"
-      }
-    ]
+
+  }, {
+    "path": "goods_list/goods_list"
+  }, {
+    "path": "goods_list/goods_list",
+    "style": {
+      "navigationBarTitleText": "",
+      "enablePullDownRefresh": false
+    }
+
+  }, {
+    "path": "search/search",
+    "style": {
+      "navigationBarTitleText": "",
+      "enablePullDownRefresh": false
+    }
+
+  }]
+}],
+"globalStyle": {
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "uni-app",
+  "navigationBarBackgroundColor": "#efefef",
+  "backgroundColor": "#F8F8F8",
+  "app-plus": {
+    "background": "#efeff4"
   }
+},
+"tabBar": {
+  "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "static/home (1).png",
+      "selectedIconPath": "static/home-fill (1).png"
+    },
+    {
+      "pagePath": "pages/catr/catr",
+      "text": "分类",
+      "iconPath": "static/all.png",
+      "selectedIconPath": "static/all-fill.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "static/cart-Empty.png",
+      "selectedIconPath": "static/cart-Empty-fill.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "联系我们",
+      "iconPath": "static/account.png",
+      "selectedIconPath": "static/account-fill.png"
+    }
+  ]
+}
 }

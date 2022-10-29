@@ -1,60 +1,4 @@
 <template>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c65e62c (提交分类以及主页)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
->>>>>>> 064de9d (提交也没)
-=======
-=======
->>>>>>> d090979 (提交分类以及主页)
->>>>>>> d6350b2 (提交也没)
-  <view class="">111</view>
-=======
-  <view>
-    catr
-  </view>
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d6350b2 (提交也没)
-=======
-  <view class="">111</view>
->>>>>>> 56385ea (首页的简单交互完成)
-=======
-<<<<<<< HEAD
->>>>>>> c65e62c (提交分类以及主页)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
-=======
-  <view class="">111</view>
->>>>>>> 56385ea (首页的简单交互完成)
->>>>>>> 064de9d (提交也没)
-=======
->>>>>>> d090979 (提交分类以及主页)
->>>>>>> d6350b2 (提交也没)
-=======
-  <view class="scrool-view-container">
-    <!-- 左侧滑动区域 -->
-    <scroll-view scroll-y="true" class="left-scrool" :style="{height:wh + 'px'}">
-      <block v-for="(item,index) in cateList" :key="index">
-        <view :class="['left-scroll-item',index=== active ? 'active' :'']" @click="isActive(index)">{{item.cat_name}}
-        </view>
-      </block>
-=======
-  <view>
     <zjh-search @zjhClick="zjhClick"  :bgcolor="'#000'" :raduis="18"  :tname="'搜索'" :icon="'search'"></zjh-search>
     <view class="scrool-view-container">
       <!-- 左侧滑动区域 -->
@@ -63,7 +7,6 @@
           <view :class="['left-scroll-item',index=== active ? 'active' :'']" @click="isActive(index)">{{item.cat_name}}
           </view>
         </block>
->>>>>>> 90c1dcb (自定义搜索框第一版)
 
       </scroll-view>
       <!-- 右侧滑动区域 -->
@@ -85,8 +28,6 @@
       </scroll-view>
     </view>
   </view>
-
->>>>>>> cc1c6b3 (分类页面功能完成)
 </template>
 
 <script>
@@ -94,66 +35,6 @@
 
     data() {
       return {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c65e62c (提交分类以及主页)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
->>>>>>> 064de9d (提交也没)
-=======
-=======
->>>>>>> d090979 (提交分类以及主页)
->>>>>>> d6350b2 (提交也没)
-     
-      };
-    },
-    methods: {
-     
-    },
-    onLoad() {
-   
-=======
-        
-      };
->>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 064de9d (提交也没)
-=======
->>>>>>> d6350b2 (提交也没)
-=======
-     
-      };
-    },
-    methods: {
-     
-    },
-    onLoad() {
-   
->>>>>>> 56385ea (首页的简单交互完成)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c65e62c (提交分类以及主页)
-=======
->>>>>>> d090979 (提交分类以及主页)
-=======
->>>>>>> 064de9d (提交也没)
-=======
-=======
->>>>>>> d090979 (提交分类以及主页)
->>>>>>> d6350b2 (提交也没)
-=======
         wh: 0,
         cateList: [],
         active: 0,
@@ -194,7 +75,6 @@
       this.wh = sysInfo.windowHeight - 50
       this.getCateList();
 
->>>>>>> cc1c6b3 (分类页面功能完成)
     }
   }
 </script>
