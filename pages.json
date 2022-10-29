@@ -30,8 +30,11 @@
   }],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 56385ea (首页的简单交互完成)
+=======
+>>>>>>> c65e62c (提交分类以及主页)
   "subPackages": [{
     "root": "subpkg",
     "pages": [{
@@ -53,10 +56,15 @@
             ]
   }],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
 =======
 >>>>>>> 56385ea (首页的简单交互完成)
+=======
+=======
+>>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
+>>>>>>> c65e62c (提交分类以及主页)
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
