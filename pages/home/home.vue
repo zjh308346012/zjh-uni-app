@@ -56,7 +56,7 @@
       this.getNavList();
       this.getFloorList()
     },
-  
+
     methods: {
       homeSearch() {
         uni.navigateTo({
