@@ -28,6 +28,7 @@
     }
 
   }],
+<<<<<<< HEAD
   "subPackages": [{
     "root": "subpkg",
     "pages": [{
@@ -48,6 +49,8 @@
                 }
             ]
   }],
+=======
+>>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
