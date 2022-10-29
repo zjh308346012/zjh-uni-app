@@ -153,7 +153,7 @@
 
     .floor_box {
       display: flex;
-      padding: 5rpx;
+      padding: 6rpx;
       height: 480rpx;
 
       .floor_f {
