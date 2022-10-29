@@ -1,17 +1,90 @@
 {
-	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	}],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"app-plus": {
-			"background": "#efeff4"
-		}
-	}
+  "pages": [{
+    "path": "pages/home/home",
+    "style": {
+      "navigationBarTitleText": "",
+      "enablePullDownRefresh": false
+    }
+
+  }, {
+    "path": "pages/catr/catr",
+    "style": {
+      "navigationBarTitleText": "",
+      "enablePullDownRefresh": false
+    }
+
+  }, {
+    "path": "pages/cart/cart",
+    "style": {
+      "navigationBarTitleText": "",
+      "enablePullDownRefresh": false
+    }
+
+  }, {
+    "path": "pages/my/my",
+    "style": {
+      "navigationBarTitleText": "",
+      "enablePullDownRefresh": false
+    }
+
+  }],
+<<<<<<< HEAD
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [{
+      "path": "goods_detail/goods_detail",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }    ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+  }],
+=======
+>>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#efefef",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/home (1).png",
+        "selectedIconPath": "static/home-fill (1).png"
+      },
+      {
+        "pagePath": "pages/catr/catr",
+        "text": "分类",
+        "iconPath": "static/all.png",
+        "selectedIconPath": "static/all-fill.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "static/cart-Empty.png",
+        "selectedIconPath": "static/cart-Empty-fill.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "联系我们",
+        "iconPath": "static/account.png",
+        "selectedIconPath": "static/account-fill.png"
+      }
+    ]
+  }
 }
