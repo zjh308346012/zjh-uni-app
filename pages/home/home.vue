@@ -57,6 +57,7 @@
       this.getFloorList()
     },
   
+<<<<<<< HEAD
     onLoad() {
       this.getSwiperList();
       this.getNavList();
@@ -68,6 +69,15 @@
            url:'/subpkg/search/search'
          })
        },
+=======
+    methods: {
+      homeSearch() {
+        uni.navigateTo({
+          url: '/subpkg/search/search'
+        })
+        console.log('ok')
+      },
+>>>>>>> 90c1dcb (自定义搜索框第一版)
       async getSwiperList() {
         const res = await uni.$http.get('/api/public/v1/home/swiperdata')
         const {

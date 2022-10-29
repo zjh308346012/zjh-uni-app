@@ -26,6 +26,7 @@
       "navigationBarTitleText": "",
       "enablePullDownRefresh": false
     }
+<<<<<<< HEAD
   }],
   
 "subPackages": [{
@@ -35,6 +36,45 @@
     "style": {
       "navigationBarTitleText": "",
       "enablePullDownRefresh": false
+=======
+
+  }  
+    ],
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [{
+      "path": "goods_detail/goods_detail",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "goods_list/goods_list",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }    ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+  }],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#efefef",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+>>>>>>> 90c1dcb (自定义搜索框第一版)
     }
 
   }, {

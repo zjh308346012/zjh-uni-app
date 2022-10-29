@@ -1,4 +1,8 @@
 <template>
+<<<<<<< HEAD
+=======
+  <view>
+>>>>>>> 90c1dcb (自定义搜索框第一版)
     <zjh-search @zjhClick="zjhClick"  :bgcolor="'#000'" :raduis="18"  :tname="'搜索'" :icon="'search'"></zjh-search>
     <view class="scrool-view-container">
       <!-- 左侧滑动区域 -->
