@@ -1,3 +1,4 @@
+
 <template>
   <view>
     <zjh-search @zjhClick="homeSearch" :skty="'sticky'" :top="0" :bgcolor="'#000'" :raduis="18" :tname="'搜索'"
@@ -57,22 +58,6 @@
       this.getFloorList()
     },
   
-<<<<<<< HEAD
-<<<<<<< HEAD
-    onLoad() {
-      this.getSwiperList();
-      this.getNavList();
-      this.getFloorList()
-    },
-    methods: {
-       homeSearch(){
-         uni.navigateTo({
-           url:'/subpkg/search/search'
-         })
-       },
-=======
-=======
->>>>>>> zjh-uni
     methods: {
       homeSearch() {
         uni.navigateTo({
@@ -80,10 +65,6 @@
         })
         console.log('ok')
       },
-<<<<<<< HEAD
->>>>>>> 90c1dcb (自定义搜索框第一版)
-=======
->>>>>>> zjh-uni
       async getSwiperList() {
         const res = await uni.$http.get('/api/public/v1/home/swiperdata')
         const {
@@ -134,10 +115,7 @@
         this.floorList = message
 
       }
-<<<<<<< HEAD
-=======
 
->>>>>>> zjh-uni
     }
   }
 </script>
