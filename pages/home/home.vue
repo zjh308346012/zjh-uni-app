@@ -58,6 +58,7 @@
     },
   
 <<<<<<< HEAD
+<<<<<<< HEAD
     onLoad() {
       this.getSwiperList();
       this.getNavList();
@@ -70,6 +71,8 @@
          })
        },
 =======
+=======
+>>>>>>> zjh-uni
     methods: {
       homeSearch() {
         uni.navigateTo({
@@ -77,7 +80,10 @@
         })
         console.log('ok')
       },
+<<<<<<< HEAD
 >>>>>>> 90c1dcb (自定义搜索框第一版)
+=======
+>>>>>>> zjh-uni
       async getSwiperList() {
         const res = await uni.$http.get('/api/public/v1/home/swiperdata')
         const {
@@ -128,6 +134,10 @@
         this.floorList = message
 
       }
+<<<<<<< HEAD
+=======
+
+>>>>>>> zjh-uni
     }
   }
 </script>
