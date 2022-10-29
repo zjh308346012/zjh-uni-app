@@ -29,6 +29,9 @@
 
   }],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 56385ea (首页的简单交互完成)
   "subPackages": [{
     "root": "subpkg",
     "pages": [{
@@ -49,8 +52,11 @@
                 }
             ]
   }],
+<<<<<<< HEAD
 =======
 >>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
+=======
+>>>>>>> 56385ea (首页的简单交互完成)
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",

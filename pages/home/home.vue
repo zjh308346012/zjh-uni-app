@@ -1,6 +1,9 @@
 <template>
   <view>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 56385ea (首页的简单交互完成)
     <!-- 轮播图区域 -->
     <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
       <swiper-item v-for="(item,index) in swiperList" :key="index">
@@ -38,9 +41,12 @@
       </view>
     </view>
   </view>
+<<<<<<< HEAD
 =======
     home
 >>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
+=======
+>>>>>>> 56385ea (首页的简单交互完成)
   </view>
 </template>
 
@@ -48,6 +54,7 @@
   export default {
     data() {
       return {
+<<<<<<< HEAD
 <<<<<<< HEAD
         swiperList: [],
         navList: [],
@@ -114,12 +121,78 @@
         
       };
 >>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
+=======
+        swiperList: [],
+        navList: [],
+        floorList: []
+      };
+    },
+    onLoad() {
+      this.getSwiperList();
+      this.getNavList();
+      this.getFloorList()
+    },
+    methods: {
+      async getSwiperList() {
+        const res = await uni.$http.get('/api/public/v1/home/swiperdata')
+        const {
+          data
+        } = res
+        if (data.meta.status !== 200) {
+          return uni.$showMsg()
+        }
+        this.swiperList = data.message
+      },
+      async getNavList() {
+        const res = await uni.$http.get('/api/public/v1/home/catitems')
+        const {
+          message,
+          meta
+        } = res.data
+        if (meta.status !== 200) return uni.$showMsg()
+        this.navList = message
+      },
+      //获取分类信息
+      getNavInfo(info) {
+        const {
+          image_src,
+          name,
+          navigator_url,
+          open_type
+        } = info
+
+        if (name == '分类' && open_type == 'switchTab') {
+          uni.switchTab({
+            url: '/pages/catr/catr'
+          })
+        }
+      },
+      //获取下方的列表
+      async getFloorList() {
+        const res = await uni.$http.get('/api/public/v1/home/floordata')
+        const {
+          message,
+          meta
+        } = res.data
+        if (meta.status !== 200) return uni.$showMsg()
+        message.forEach(item => {
+          item.product_list.forEach(k => {
+            k.url = '/subpkg/goods_list/goods_list?' + k.navigator_url.split('?')[1]
+          })
+        })
+        this.floorList = message
+
+      }
+>>>>>>> 56385ea (首页的简单交互完成)
     }
   }
 </script>
 
 <style lang="scss">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 56385ea (首页的简单交互完成)
   //轮播图区域
   swiper {
     height: 330rpx;
@@ -174,7 +247,10 @@
       }
     }
   }
+<<<<<<< HEAD
 =======
 
 >>>>>>> 257cbe6 (设置了tabar导航以及新增图片)
+=======
+>>>>>>> 56385ea (首页的简单交互完成)
 </style>
