@@ -27,6 +27,7 @@
       "enablePullDownRefresh": false
     }
 
+<<<<<<< HEAD
   }],
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -50,6 +51,10 @@
 =======
 >>>>>>> d090979 (提交分类以及主页)
 >>>>>>> d6350b2 (提交也没)
+=======
+  }  
+    ],
+>>>>>>> 90c1dcb (自定义搜索框第一版)
   "subPackages": [{
     "root": "subpkg",
     "pages": [{
@@ -59,8 +64,20 @@
         "enablePullDownRefresh": false
       }
 
+<<<<<<< HEAD
     }    ,{
                     "path" : "goods_list/goods_list",
+=======
+    }, {
+      "path": "goods_list/goods_list",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }    ,{
+                    "path" : "search/search",
+>>>>>>> 90c1dcb (自定义搜索框第一版)
                     "style" :                                                                                    
                 {
                     "navigationBarTitleText": "",
