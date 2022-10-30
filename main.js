@@ -6,7 +6,13 @@ import {
 } from "@escook/request-miniprogram"
 uni.$http = $http
 Vue.config.productionTip = false
-
+uni.showMsg = function(title = "数据加载失败...",duration = 1500){
+  uni.showToast({
+    title,
+    duration,
+    icon:"none"
+  })
+}
 
 App.mpType = 'app'
 

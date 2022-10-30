@@ -79,7 +79,7 @@
           message,
           meta
         } = res.data
-        if (meta.status !== 200 || message.length === 0) return uni.$showMsg('暂时没有数据...')
+        if (meta.status !== 200 || message.length === 0) return uni.showMsg('暂时没有数据...')
         this.searchList = message
         console.log(this.searchList, 'searchList')
       },
