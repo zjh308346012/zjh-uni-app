@@ -43,7 +43,9 @@
 </template>
 
 <script>
+  import Mixins from '@/mixins/tabbaar-set.js'
   export default {
+    mixins: [Mixins],
     data() {
       return {
         swiperList: [],

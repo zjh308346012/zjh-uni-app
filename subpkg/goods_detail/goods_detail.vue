@@ -36,7 +36,14 @@
 </template>
 
 <script>
+  import {
+    mapState,
+    mapMutations,
+    mapGetters
+  } from 'vuex'
+  import Mixins from '@/mixins/tabbaar-set.js'
   export default {
+    mixins: [Mixins],
     data() {
       return {
         goods_info: {},
@@ -46,7 +53,7 @@
         }, {
           icon: 'cart',
           text: '购物车',
-          info: 2
+          info: 0
         }],
         // 右侧按钮组的配置对象
         buttonGroup: [{
@@ -62,13 +69,51 @@
         ]
       };
     },
+    computed: {
+      ...mapState('carInfo', ['car']),
+      ...mapGetters('carInfo', ['total'])
+
+    },
+    watch: {
+      total: {
+        handler(n) {
+          let totals = this.options.find(x => x.text == '购物车')
+          if (!totals) return
+          totals.info = n
+        },
+        immediate: true
+      }
+    },
     onLoad(options) {
       // 获取商品 Id
       const goods_id = options.goods_id
       // 调用请求商品详情数据的方法
       this.getGoodsDetail(goods_id)
+     
     },
+ 
     methods: {
+      ...mapMutations('carInfo', ['addToCar']),
+      buttonClick(e) {
+        if (e.content.text === '加入购物车') {
+          let {
+            goods_id,
+            goods_name,
+            goods_price,
+            goods_small_logo
+          } = this.goods_info
+          const goods = {
+            goods_id, // 商品的Id
+            goods_name, // 商品的名称
+            goods_price, // 商品的价格
+            goods_count: 1, // 商品的数量
+            goods_small_logo, // 商品的图片
+            goods_state: true // 商品的勾选状态
+          }
+          this.addToCar(goods)
+        }
+         console.log(this.setBarRightText())
+      },
       toCar(e) {
         if (e.content.text === '购物车') {
           // 切换到购物车页面

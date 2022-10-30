@@ -1,6 +1,6 @@
 <template>
   <view>
-    <zjh-search @zjhClick="zjhClick"  :bgcolor="'#000'" :raduis="18"  :tname="'搜索'" :icon="'search'"></zjh-search>
+    <zjh-search @zjhClick="zjhClick" :bgcolor="'#000'" :raduis="18" :tname="'搜索'" :icon="'search'"></zjh-search>
     <view class="scrool-view-container">
       <!-- 左侧滑动区域 -->
       <scroll-view scroll-y="true" class="left-scrool" :style="{height:wh + 'px'}">
@@ -31,10 +31,11 @@
   </view>
 
 </template>
-
 <script>
+  import {
+    mapState
+  } from 'vuex'
   export default {
-
     data() {
       return {
         wh: 0,
@@ -43,6 +44,9 @@
         cateListc: [],
         scrollTop: 0
       }
+    },
+    computed: {
+      ...mapState('carInfo', ['car'])
     },
     methods: {
       async getCateList() {
@@ -64,9 +68,9 @@
           url: '/subpkg/goods_list/goods_list?cid=' + v.cat_id
         })
       },
-      zjhClick(){
+      zjhClick() {
         uni.navigateTo({
-          url:'/subpkg/search/search'
+          url: '/subpkg/search/search'
         })
         console.log('ok')
       }
