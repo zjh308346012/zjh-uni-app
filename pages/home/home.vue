@@ -106,7 +106,7 @@
           message,
           meta
         } = res.data
-        if (meta.status !== 200) return uni.$showMsg()
+        if (meta.status !== 200) return uni.showMsg()
         message.forEach(item => {
           item.product_list.forEach(k => {
             k.url = '/subpkg/goods_list/goods_list?' + k.navigator_url.split('?')[1]
